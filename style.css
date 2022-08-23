@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+body{
+    font-family: 'Roboto';
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+.bg{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 70vw;
+    position: relative;
+    right: 20px;
+    border-bottom: 2px solid #fff;
+    /* border: 2px solid red; */
+}
+.logo{
+    font-size: 1.5rem;
+    color: #fff;
+    position: relative;
+    top: 25px;
+    left: 20px;
+}
+.call{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.c-right>h1{
+    font-size: 0.9rem;
+}
+.c-logo{
+    margin-right: 5px;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+.list-item{
+    margin-inline-start: 40px;
+}
+.list-item > a{
+    text-decoration: none;
+    color: #fff;
+}
+.main-text{
+    position: relative;
+    color: #fff;
+    top: 100px;
+    left: 50px;
+    font-size: 3.8rem;
+}
+.btn{
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+.top{
+    position: absolute;
+    right: 120px;
+    top: 150px;
+    height: 100px;
+    width: 200px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: .7;
+    z-index: -1;
+}
+.r-img{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 25px;
+    /* border: 2px solid yellow; */
+    border-radius: 12px;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 1; */
+}
+.right-top >p{
+    font-size: 0.8rem;
+    font-weight: 800;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+}
+.right-line {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    width: 2px;
+    height: 50px;
+    background-color: #fff;
+}
+.right-line2{
+    position: absolute;
+    right: -50px;
+    top: 60px;
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+}
+.right-dot,.right-dot2 {
+    position: absolute;
+    width: 20px;
+    background-color: #fff;
+    height: 20px;
+    border-radius: 50px;
+}
+.right-dot{
+    top: 150px;
+    right: 91px;
+}
+.right-dot2{
+    top: 50px;
+    right: -70px;
+}
+.left{
+    position: absolute;
+    right: 280px;
+    top: 350px;
+    height: 120px;
+    width: 200px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: .7;
+    z-index: -1;
+}
+.left-img{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 30px;
+    border-radius: 12px;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center; 
+}
+.middle >p{
+    font-size: 0.8rem;
+    font-weight: 800;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+}
+.btn{
+    background: transparent;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+/* media query */
+
+@media only screen and (max-width:910px) {
+    .main-text{
+        left: 10px;
+        font-size: 3.3rem;
+    }
+    
+}
+@media only screen and (max-width:800px){
+    .top{
+        right: 80px;
+        top: 400px;
+    }
+    .right-top >p{
+        top: 60px;
+        left: 20px;
+    }
+    .right-line {
+        right: 100px;
+        top: 100px;
+    }
+    .right-line2{
+        right: -50px;
+        top: 60px;
+        width: 50px;
+    }
+    .left{
+        right: 250px;
+        top: 550px;
+    }
+    .list-item{
+        margin-inline-start: 20px;
+    }
+}
+@media only screen and (max-width:650px){
+    .list{
+        display: none;
+    }
+    .top{
+        right: 40px;
+        top: 400px;
+    }
+    nav{
+        border: none;
+    }
+     .left{
+        right: 170px;
+        top: 550px;
+    }
+    .call{
+        position: absolute;
+        right: 5px;
+    }
+    .main-text{
+        font-size: 2.6rem;
+    }
+}
+@media only screen and (max-width:400px){
+    .main-text{
+        font-size: 2rem;
+    }
+    .top{
+        right: 30px;
+    }
+    .left{
+        right: 160px;
+    }
+}
